@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Data Types & Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .code {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: Consolas, monospace;
+    }
+    .run-online {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 12px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Python: Data Types & Simple Calculator</h1>
+
+  <div class="section">
+    <h2>1️⃣ Check Data Types</h2>
+    <div class="code">
+<pre>print(type(42))<br>print(type(3.14))<br>print(type("hello"))</pre>
+    </div>
+    <a class="run-online" href="https://replit.com/new/python3" target="_blank">Try it Yourself</a>
+  </div>
+
+  <div class="section">
+    <h2>2️⃣ Use Math Operators</h2>
+    <div class="code">
+<pre>print(5 + 2)<br>print(5 - 2)<br>print(5 * 2)<br>print(5 / 2)<br>print(5 % 2)<br>print(2 ** 3)</pre>
+    </div>
+    <a class="run-online" href="https://replit.com/new/python3" target="_blank">Try it Yourself</a>
+  </div>
+
+  <div class="section">
+    <h2>3️⃣ Convert Types</h2>
+    <div class="code">
+<pre>print(int("123"))<br>print(float("123.45"))<br>print(str(789))<br>print(int("abc"))  # Will cause an error!</pre>
+    </div>
+    <a class="run-online" href="https://replit.com/new/python3" target="_blank">Try it Yourself</a>
+  </div>
+
+  <div class="section">
+    <h2>4️⃣ Input and Math</h2>
+    <div class="code">
+<pre>a = input("Enter a number: ")<br>b = input("Enter another: ")<br>a = int(a)<br>b = int(b)<br>print("Sum is:", a + b)</pre>
+    </div>
+    <a class="run-online" href="https://replit.com/new/python3" target="_blank">Try it Yourself</a>
+  </div>
+
+  <div class="section">
+    <h2>5️⃣ Simple Calculator</h2>
+    <div class="code">
+<pre>num1 = float(input("First number: "))<br>num2 = float(input("Second number: "))<br>op = input("Operation (+, -, *, /): ")<br><br>if op == '+':<br>    print(num1 + num2)<br>elif op == '-':<br>    print(num1 - num2)<br>elif op == '*':<br>    print(num1 * num2)<br>elif op == '/':<br>    print(num1 / num2)<br>else:<br>    print("Invalid operation")</pre>
+    </div>
+    <a class="run-online" href="https://replit.com/new/python3" target="_blank">Try it Yourself</a>
+  </div>
+
+  <div class="section">
+    <h2>6️⃣ Calculator with Error Handling</h2>
+    <div class="code">
+<pre>try:<br>    num1 = float(input("First number: "))<br>    num2 = float(input("Second number: "))<br>    op = input("Choose (+, -, *, /): ")<br><br>    if op == '+':<br>        print(num1 + num2)<br>    elif op == '-':<br>        print(num1 - num2)<br>    elif op == '*':<br>        print(num1 * num2)<br>    elif op == '/':<br>        print(num1 / num2)<br>    else:<br>        print("Invalid operation")<br>except ValueError:<br>    print("Please enter valid numbers!")<br>except ZeroDivisionError:<br>    print("Cannot divide by zero!")</pre>
+    </div>
+    <a class="run-online" href="https://replit.com/new/python3" target="_blank">Try it Yourself</a>
+  </div>
+
+</body>
+</html>
